@@ -1,12 +1,11 @@
-package main
+package api
 
 import (
 	"fmt"
 	"json-converter/bins"
 )
 
-func main() {
-	binList := bins.BinList{}
+func Api(binList *bins.BinList) {
 
 	bin := bins.NewBin(1, true, "test")
 	binList.AddBin(bin)
